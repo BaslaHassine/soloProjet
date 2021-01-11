@@ -13,6 +13,7 @@ var addItem = function(name,quantity,price){
 		item.quantity = quantity,
 		item.price = price
 	return item
+
 	}
 $('#add').click(function(){
 	var nameAdd = $('#idcommodityNameAdd').val();
@@ -32,13 +33,27 @@ $('#remove').click(function(){
 	var nameRemove  = $("#idcommodityNameRemove").val();
 	var  qteRemove = $('#QteRemove').val();
 	for(var i = 0; i < purchaseList.length; i++){
-		if(nameRemove === purchaseList[i]["name"] && Number(qteRemove) === purchaseList[i]['quantity']){
-			purchaseList.splice(i, 1)
-			// delete purchaseList[i]
+		if(nameRemove === purchaseList[i]["name"] && Number(qteRemove) === purchaseList[i]['quantity']){		
+		var	total = parseFloat($('#total').val()) - (purchaseList[i]["quantity"] * purchaseList[i]["price"]);
+			$("#total").val(total);
+		var	remainder = parseFloat($("#idamount").val(), 100) -parseFloat(total, 100);
+			console.log(remainder, parseFloat(total, 100))
+			$("#idremainder").val(remainder);
+			purchaseList.splice(i, 1);
 		}
-
+			if(nameRemove === purchaseList[i]['name'] && Number(qteRemove) < purchaseList[i]["price"]){
+		var	total = parseFloat($('#total').val()) - (Number(qteRemove) * purchaseList[i]["price"]);
+			$("#total").val(total);
+		var	remainder = parseFloat($("#idamount").val(), 100) -parseFloat(total, 100);
+			console.log(remainder, parseFloat(total, 100))
+			$("#idremainder").val(remainder);
+			purchaseList.splice(i, 1, addItem(nameRemove, Number(qteRemove), purchaseList[i]["price"]))
+		}
+		
+		console.log(purchaseList);
 	}	
-	console.log(purchaseList);
+	
+		
 });
 
 }
