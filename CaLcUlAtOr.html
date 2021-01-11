@@ -8,17 +8,12 @@
 	<meta charset="utf-8">
 </head>
 <body>
-
 <h1>Welcome  Our Dear Customer</h1>
 
-<header>
-	<h2>Purchase List</h2>
-</header>
 
-<section>
- 
+<section id="mySection">
+  <div id="myForm">
     <form >
-    	<hr>
         <label for="famount">Your Amount :</label>
         <input type="text" id="idamount" name="Namount" placeholder="0.000">
         <label for="fremainder">Remainder:</label>
@@ -27,30 +22,33 @@
       </form> 
       <hr>
       <h2>To Buy Somthing</h2>
-    <form >
-       
-        <input type="text" id="idcommodityNameAdd" name="Namount" placeholder="Commodity Name">      
-        <input type="number" id="Qte" name="qte" placeholder="Quantity"> 
-        <input type="text" id="idprice" name="Nprice"  placeholder="Price">
+    <form >     
+      <input type="text" id="idcommodityNameAdd" name="Namount" placeholder="Commodity Name">      
+      <input type="number" id="QteAdd" name="qteAdd" placeholder="Quantity"> 
+      <input type="text" id="idprice" name="Nprice"  placeholder="Price">
     	<input type="button" id="add" value="Add" >  
       </form> 
       <hr>
-      <h2>To Remove Somthing</h2>
-      <form >     
-        <input type="text" id="idcommodityNameRemove" name="Namount" placeholder="commodity name">   
-        <input type="button" id="remove" value="remove" >   
-        
-      </form> 
-      
+    <form >  
+      <h2>To Remove Somthing</h2>   
+      <input type="text" id="idcommodityNameRemove" name="Namount" placeholder="commodity name">   
+      <input type="number" id="QteRemove" name="qteRemove" placeholder="Quantity">
+      <input type="button" id="remove" value="remove" >      
+    </form>  
+  </div>
+  <div id="myItems">
+    <h2>Purchase List</h2>
+    <!-- will append the items in a list -->
+    <li> first item </li>
+    
+  </div>     
 </section> 
-<hr>
-<aside >
+<div id="submit">
     <label for="famount">Total :</label>
         <input type="text" id="total" name="total" placeholder="total" value="0.000">
-</aside>
-<footer>
-  <button id="myButton">SuBmIt</button>
-</footer>
+        <button id="myButton">SuBmIt</button>
+</div>
+
 
 </body>
 </html>
