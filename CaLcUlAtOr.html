@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>CaLcUlAtOr</title>
+	<link rel="stylesheet" href="cAlCu.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="CaLcU.js"></script>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<h1>Welcome  Our Dear Customer</h1>
+
+<header>
+	<h2>Purchase List</h2>
+</header>
+
+<section>
+ 
+    <form >
+        <label for="famount">Your Amount :</label>
+        <input type="text" id="idamount" name="Namount" placeholder="0.000">
+        <label for="fremainder">Remainder:</label>
+        <input type="text" id="idremainder" name="Nremainder" placeholder="0.000"><br><br>
+    
+      </form> 
+      <hr>
+      <h2>To Buy Somthing</h2>
+    <form >
+       
+        <input type="text" id="idcommodityNameAdd" name="Namount" placeholder="Commodity Name">      
+        <input type="number" id="Qte" name="qte" placeholder="Quantity"> 
+        <input type="text" id="idprice" name="Nprice"  placeholder="Price">
+    	<input type="button" id="add" value="Add" >  
+      </form> 
+      <hr>
+      <h2>To Remove Somthing</h2>
+      <form >     
+        <input type="text" id="idcommodityNameRemove" name="Namount" placeholder="commodity name">   
+        <input type="button" id="remove" value="remove" >   
+        
+      </form> 
+      
+</section> 
+<aside >
+    <label for="famount">Total :</label>
+        <input type="text" id="total" name="total" placeholder="total" value="0.000">
+</aside>
+<footer>
+  <button id="myButton">SuBmIt</button>
+</footer>
+
+</body>
+</html>
