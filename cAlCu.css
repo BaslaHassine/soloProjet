@@ -6,12 +6,123 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 #myItems {
-	float: right;
-    margin-left: 100px;
+	width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 10px 0 5px -10px #29627e;
+    font-style: italic;
+    color: #29627e;
 }
  #mySection {
  	display: flex;
  }
  #submit{
+ 	width: 40%;
  	margin: 50px;
+ 	float: right;
  }
+ 
+ #add{
+ 	 width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+ }
+
+#remove{
+	background-color: #FF0000;
+   width: 33%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#list{
+	color: black;	
+}
+
+#idcommodityNameAdd{
+	background-color: ##4CAF50;
+  color: black;
+  padding: 5px 50px;
+  text-align: left;  
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 0px; 
+}
+
+#QteAdd{
+	background-color: ##4CAF50;
+  color: black;
+  padding: 5px 0px;
+  text-align: left;  
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 0px; 
+}
+
+#idprice{
+	background-color: ##4CAF50;
+  color: black;
+  padding: 5px 30px;
+  text-align: left;  
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 0px;
+}
+
+#idcommodityNameRemove{
+	background-color: ##4CAF50;
+  color: black;
+  padding: 5px 50px;
+  text-align: left;  
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 0px
+}
+
+#QteRemove{
+	background-color: ##4CAF50;
+  color: black;
+  padding: 5px 0px;
+  text-align: left;  
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 0px;
+}
+
+.ar{
+	background-color: ##4CAF50;
+  color: black;
+  padding: 5px 0px;
+  text-align: right;  
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 0px;
+}
+.yr{
+	font-size: 200%;
+}
+
+#total{
+	background-color: ##4CAF50;
+  color: black;
+  padding: 5px 0px;
+  text-align: right;  
+  display: inline-block;
+  font-size: 20px;
+  margin: 0px 0px;
+}
+#tt{
+	font-size: 200%;
+}
